@@ -3,9 +3,5 @@ presentation:
     path: /docs/docs/zpracovani/presentation/zk.txt
 
 worksheet:
-  - name: Algebra - Základy
-    path: /docs/docs/zpracovani/presentation/zk.txt
 
 test:
-  - name: Algebra - Základy
-    path: /docs/docs/zpracovani/presentation/zk.txt
