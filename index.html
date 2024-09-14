@@ -98,16 +98,13 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="zpracovaniDropdown" role="button">
-                                    Zpracování
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="zpracovaniDropdown">
-                                    <li><a class="dropdown-item" href="subjects/zpracovaniprezentace">Prezentace</a></li>
-                                    <li><a class="dropdown-item" href="#">Pracovní listy</a></li>
-                                    <li><a class="dropdown-item" href="#">Ukázkové testy</a></li>
-                                </ul>
-                            </li>
+                            {% for subject in site.subjects %}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
+                                        {{ subject.title }}
+                                    </a>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
