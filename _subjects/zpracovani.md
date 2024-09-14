@@ -2,6 +2,9 @@
 layout: predmet
 title: Zpracování
 buttonId: zpracovaniDropdown
-presentation: /docs/zpracovani/presentation
-worksheet: /docs/zpracovani/worksheet
+directories:
+  - name: Prezentace
+    presentation: /docs/zpracovani/presentation
+  - name: Pracovní listy
+    worksheet: /docs/zpracovani/worksheet
 ---

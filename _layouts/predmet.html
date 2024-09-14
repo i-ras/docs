@@ -141,21 +141,15 @@
         </div>
 
         <div class="content-box">
-            <h2 class="mb-4">Seznam studijních materiálů - Matematika</h2>
+            <h2 class="mb-4">Seznam studijních materiálů - {{ page.title }}</h2>
 
             <ul class="list-group">
-                <li class="list-group-item">
-                    <h5>Algebra - Základy</h5>
-                    <a href="#" class="link-primary">Otevřít materiál</a>
-                </li>
-                <li class="list-group-item">
-                    <h5>Geometrie - Trojúhelníky</h5>
-                    <a href="#" class="link-primary">Otevřít materiál</a>
-                </li>
-                <li class="list-group-item">
-                    <h5>Analýza - Derivace</h5>
-                    <a href="#" class="link-primary">Otevřít materiál</a>
-                </li>
+                {% for directory in page.directories %}
+                    <li class="list-group-item">
+                        <h5>{{ directory.name }}</h5>
+                        <a href="{{ directory.path }}" class="btn btn-success" download>Stáhnout materiál</a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
 
