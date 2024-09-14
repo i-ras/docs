@@ -127,15 +127,13 @@
                                     <div class="text">Hlavní stránka</div>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="matematikaDropdown" role="button">
-                                    Matematika
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="matematikaDropdown">
-                                    <li><a class="dropdown-item" href="#">Prezentace</a></li>
-                                    <li><a class="dropdown-item" href="#">Pracovní listy</a></li>
-                                </ul>
-                            </li>
+                            {% for subject in site.subjects %}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
+                                        {{ subject.title }}
+                                    </a>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
