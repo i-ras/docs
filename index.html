@@ -5,94 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Předávání studijních materiálů</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Obecné stylizace */
-        body {
-            background-color: #f8f9fa;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container-custom {
-            width: 75%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            flex: 1; /* Roste a zabírá dostupný prostor */
-        }
-        /* Stylizace pro zelený rámeček s názvem webu */
-        .header-box {
-            background-color: #28a745;
-            border-radius: 15px 15px 0 0;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Přidán stín */
-        }
-        /* Stylizace pro šedý rámeček s navigačním menu */
-        .navbar-box {
-            background-color: #e9ecef;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Stín */
-            padding: 10px;
-            margin-bottom: 5px; /* Odstup od hlavního obsahu */
-        }
-        .navbar-custom {
-            background-color: transparent;
-            padding: 0;
-        }
-        .nav-link {
-            color: #28a745 !important;
-        }
-        .dropdown-menu {
-            border-radius: 10px;
-        }
-        .dropdown-menu a {
-            color: #28a745 !important;
-        }
-        .navbar-nav {
-            margin: 0 auto;
-        }
-        /* Aktivace dropdownu na hover a udržení zobrazení při hoveru na menu */
-        .nav-item:hover .dropdown-menu, 
-        .dropdown-menu:hover {
-            display: block;
-        }
-        .dropdown-menu {
-            display: none;
-            margin-top: 0;
-        }
-        /* Stylizace hlavního obsahu */
-        .content-box {
-            border: 2px solid #e9ecef;
-            border-radius: 15px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Přidán stín */
-            flex: 1; /* Roste a zabírá dostupný prostor */
-        }
-        /* Stylizace patičky */
-        .footer-box {
-            background-color: #28a745;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Přidán stín */
-            margin-top: 5px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Hlavní kontejner -->
     <div class="container-custom">
-        <!-- Zelený rámeček s názvem webu -->
         <div class="header-box">
             <h1>Studijní materiály</h1>
         </div>
 
-        <!-- Šedý rámeček s navigačním menu -->
         <div class="navbar-box">
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="container-fluid">
@@ -143,11 +63,9 @@
             </nav>
         </div>
 
-        <!-- Šedý rámeček s hlavním obsahem -->
         <div class="content-box">
             <h1 class="mb-4">Seznam studijních materiálů</h1>
 
-            <!-- Seznam materiálů -->
             <ul class="list-group">
                 <li class="list-group-item">
                     <h5>Matematika - Algebra</h5>
@@ -168,7 +86,6 @@
             </ul>
         </div>
 
-        <!-- Patička -->
         <div class="footer-box">
             <p>&copy; 2024 Autor: Jan Novák</p>
         </div>
