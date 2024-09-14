@@ -129,7 +129,7 @@
                             </li>
                             {% for subject in site.subjects %}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="/docs/{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
+                                    <a class="nav-link dropdown-toggle" href="/docs/{{ subject.url }}" id="{{ subject.button_id }}" role="button">
                                         {{ subject.title }}
                                     </a>
                                 </li>
@@ -143,14 +143,24 @@
         <div class="content-box">
             <h2 class="mb-4">Seznam studijních materiálů - {{ page.title }}</h2>
 
-            <ul class="list-group">
-                {% for directory in page.directories %}
-                    <li class="list-group-item">
-                        <h5>{{ directory.name }}</h5>
-                        <a href="{{ directory.path }}" class="btn btn-success" download>Stáhnout materiál</a>
-                    </li>
-                {% endfor %}
-            </ul>
+            {% assign documents = site.data[page.data_file] %}
+
+            {% for group in page.show_groups %}
+                <h3>{{ group | capitalize }}</h3>
+                <ul class="list-group">
+                    {% assign items = documents[group] %}
+                    {% if items %}
+                        {% for document in items %}
+                            <li class="list-group-item">
+                                <h5>{{ document.name }}</h5>
+                                <a href="{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
+                            </li>
+                        {% endfor %}
+                    {% else %}
+                        <li class="list-group-item">Žádné dokumenty k dispozici.</li>
+                    {% endif %}
+                </ul>
+            {% endfor %}
         </div>
 
         <div class="footer-box">

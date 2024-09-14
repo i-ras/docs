@@ -1,10 +1,10 @@
 ---
 layout: predmet
 title: Zpracování
-buttonId: zpracovaniDropdown
-directories:
-  - name: Prezentace
-    path: /docs/zpracovani/presentation
-  - name: Pracovní listy
-    path: /docs/zpracovani/worksheet
+button_id: zpracovaniDropdown
+data_file: zpracovani
+show_groups:
+  - presentation
+  - worksheet
+  - test
 ---
