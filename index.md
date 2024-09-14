@@ -1,4 +1,4 @@
 ---
 layout: index
-title: Výukových materiálů
+title: Výukové materiály
 ---
