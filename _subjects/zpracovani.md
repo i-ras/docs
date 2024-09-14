@@ -4,7 +4,7 @@ title: Zpracování
 buttonId: zpracovaniDropdown
 directories:
   - name: Prezentace
-    presentation: /docs/zpracovani/presentation
+    path: /docs/zpracovani/presentation
   - name: Pracovní listy
-    worksheet: /docs/zpracovani/worksheet
+    path: /docs/zpracovani/worksheet
 ---
