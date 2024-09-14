@@ -110,6 +110,12 @@
             justify-content: space-between;
             align-items: center;
         }
+        .group-section {
+            margin-bottom: 30px;
+        }
+        .group-section h3 {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -151,20 +157,22 @@
             {% assign documents = site.data[page.data_file] %}
 
             {% for group in page.show_groups %}
-                <h3>{{ group.display_name }}</h3>
-                <ul class="list-group">
-                    {% assign items = documents[group.key] %}
-                    {% if items %}
-                        {% for document in items %}
-                            <li class="list-group-item">
-                                <h5>{{ document.name }}</h5>
-                                <a href="{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
-                            </li>
-                        {% endfor %}
-                    {% else %}
-                        <li class="list-group-item">Žádné dokumenty k dispozici.</li>
-                    {% endif %}
-                </ul>
+                <div class="group-section">
+                    <h3>{{ group.display_name }}</h3>
+                    <ul class="list-group">
+                        {% assign items = documents[group.key] %}
+                        {% if items %}
+                            {% for document in items %}
+                                <li class="list-group-item">
+                                    <h5>{{ document.name }}</h5>
+                                    <a href="{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
+                                </li>
+                            {% endfor %}
+                        {% else %}
+                            <li class="list-group-item">Žádné dokumenty k dispozici.</li>
+                        {% endif %}
+                    </ul>
+                </div>
             {% endfor %}
         </div>
 
