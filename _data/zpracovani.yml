@@ -1,11 +1,11 @@
 presentation:
   - name: Zk
-    path: /docs/zpracovani/presentation/zk.txt
+    path: /docs/docs/zpracovani/presentation/zk.txt
 
 worksheet:
   - name: Zk
-    path: /docs/zpracovani/presentation/zk.txt
+    path: /docs/docs/zpracovani/presentation/zk.txt
 
 test:
   - name: Zk
-    path: /docs/zpracovani/presentation/zk.txt
+    path: /docs/docs/zpracovani/presentation/zk.txt
