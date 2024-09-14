@@ -122,14 +122,14 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link home-link" href="../../index.html">
+                                <a class="nav-link home-link" href="/docs/">
                                     <i class="fas fa-home"></i>
                                     <div class="text">Hlavní stránka</div>
                                 </a>
                             </li>
                             {% for subject in site.subjects %}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="docs/{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
+                                    <a class="nav-link dropdown-toggle" href="/docs/{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
                                         {{ subject.title }}
                                     </a>
                                 </li>
