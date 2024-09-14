@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container-custom {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .header-box {
+            background-color: #28a745;
+            border-radius: 15px 15px 0 0;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .navbar-box {
+            background-color: #e9ecef;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .navbar-custom {
+            background-color: transparent;
+            padding: 0;
+        }
+        .nav-link {
+            color: #28a745 !important;
+        }
+        .dropdown-menu {
+            border-radius: 10px;
+        }
+        .dropdown-menu a {
+            color: #28a745 !important;
+        }
+        .navbar-nav {
+            margin: 0 auto;
+        }
+        .nav-item:hover .dropdown-menu, 
+        .dropdown-menu:hover {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            margin-top: 0;
+        }
+        .content-box {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-box {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            margin-top: 5px;
+        }
+        .terms-content {
+            max-width: 80%;
+            text-align: justify;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-custom">
+        <div class="header-box">
+            <h1>{{ page.title }}</h1>
+        </div>
+
+        <div class="navbar-box">
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            {% for subject in site.subjects %}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
+                                        {{ subject.title }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content-box">
+            <div class="terms-content">
+                <h2 class="mb-4" style="text-align: center;">Podmínky užívání obsahu</h2>
+
+                <h4>§ 1 Úvodní ustanovení</h4>
+                <p><b>1.1.</b> Tyto podmínky užívání („Podmínky“) upravují podmínky přístupu k výukovým materiálům umístěným na této webové stránce („Webová stránka“).</p>
+                <p><b>1.2.</b> Výukové materiály zahrnují, ale nejsou omezeny na, prezentace s probíranou látkou, pracovní listy a ukázkové testy („Materiály“).</p>
+                <p><b>1.3.</b> Provozovatelem a autorem těchto Materiálů je jejich tvůrce („Autor“). Všechny Materiály jsou chráněny autorským právem dle zákona č. 121/2000 Sb., o právu autorském („Autorský zákon“).</p>
+
+                <h4>§ 2 Autorská práva a ochrana obsahu</h4>
+                <p><b>2.1.</b> Veškerý obsah Webové stránky, včetně Materiálů, podléhá ochraně dle Autorského zákona.</p>
+                <p><b>2.2.</b> Bez výslovného písemného souhlasu Autora není dovoleno jakékoliv užití Materiálů, a to zejména jejich kopírování, distribuce, veřejné rozšiřování, sdílení, úprava či jiné zpřístupnění třetím osobám.</p>
+                <p><b>2.3.</b> Uživatelé jsou povinni respektovat veškerá autorská práva k obsahu Webové stránky a Materiálů.</p>
+
+                <h4>§ 3 Povolené užívání</h4>
+                <p><b>3.1.</b> Materiály mohou být užívány výhradně žáky pro jejich osobní přípravu na vyučovaný předmět.</p>
+                <p><b>3.2.</b> Uživatelé mají právo stáhnout a tisknout Materiály pro své osobní účely. Jakékoliv jiné užití, včetně přeposílání Materiálů třetím stranám či jejich zpřístupnění mimo okruh vlastních studijních potřeb, je zakázáno.</p>
+                <p><b>3.3.</b> Je výslovně zakázáno užívat Materiály pro komerční účely, tj. za účelem dosažení přímého či nepřímého finančního zisku, bez předchozího souhlasu Autora.</p>
+
+                <h4>§ 4 Omezení odpovědnosti</h4>
+                <p><b>4.1.</b> Autor nezodpovídá za případné škody vzniklé v souvislosti s neautorizovaným užitím Materiálů.</p>
+                <p><b>4.2.</b> Veškeré využití obsahu Webové stránky a Materiálů uživatelem je na vlastní odpovědnost uživatele.</p>
+
+                <h4>§ 5 Smluvní sankce a právní důsledky</h4>
+                <p><b>5.1.</b> Porušení těchto Podmínek může vést k občanskoprávní odpovědnosti za způsobenou škodu a k uplatnění nároků Autora na náhradu škody podle § 2910 a násl. zákona č. 89/2012 Sb., občanský zákoník („Občanský zákoník“).</p>
+                <p><b>5.2.</b> V případě, že dojde k porušení autorských práv, může Autor uplatnit své nároky také prostřednictvím trestního řízení podle § 270 zákona č. 40/2009 Sb., trestní zákoník („Trestní zákoník“), kde může být neoprávněné užití díla trestáno jako trestný čin porušení autorského práva.</p>
+
+                <h4>§ 6 Závěrečná ustanovení</h4>
+                <p><b>6.1.</b> Tyto Podmínky vstupují v platnost okamžikem zveřejnění na Webové stránce.</p>
+                <p><b>6.2.</b> Uživatelé jsou povinni se s těmito Podmínkami seznámit před tím, než začnou užívat obsah Webové stránky.</p>
+                <p><b>6.3.</b> Jakékoliv otázky a spory související s užíváním Materiálů se řídí právním řádem České republiky, zejména Autorským zákonem a Občanským zákoníkem.</p>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <p>&copy; 2024 Autor: Ing. Iva Rašková</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
