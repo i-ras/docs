@@ -1,5 +1,5 @@
 ---
 layout: predmet
-title: Zpracování - Prezentace
+title: Prezentace - Zpracování
 directory: /docs/zpracovani/prezentace
 ---
