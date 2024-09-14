@@ -148,18 +148,19 @@
         <div class="content-box">
             <h2 class="mb-4">Seznam studijních materiálů - {{ page.title }}</h2>
 
-            {% assign groups = site.data[page.data_file].groups %}
+            {% assign groups = site.data[page.data_file] %}
             
-            {% for group in groups %}
-                {% if page.show_groups contains group.key %}
-                    <h3>{{ group.name }}</h3>
+            {% for group in page.show_groups %}
+                {% assign group_data = groups[group.key] %}
+                {% if group_data %}
+                    <h3>{{ group.display_name }}</h3>
                     <ul class="list-group">
-                        {% assign documents = site.data[page.data_file][group.key] %}
+                        {% assign documents = group_data.items %}
                         {% if documents %}
                             {% for document in documents %}
                                 <li class="list-group-item">
                                     <span>{{ document.name }}</span>
-                                    <a href="{{ group.path }}/{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
+                                    <a href="{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
                                 </li>
                             {% endfor %}
                         {% else %}

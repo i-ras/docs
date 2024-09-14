@@ -4,7 +4,10 @@ title: Zpracování
 button_id: zpracovaniDropdown
 data_file: zpracovani
 show_groups:
-  - presentation
-  - worksheet
-  - test
+  - key: presentation
+    display_name: Prezentace
+  - key: worksheet
+    display_name: Pracovní listy
+  - key: test
+    display_name: Testy
 ---
