@@ -1,11 +1,10 @@
-presentation:
-  - name: Zk
-    path: /docs/docs/zpracovani/presentation/zk.txt
-
-worksheet:
-  - name: Zk
-    path: /docs/docs/zpracovani/presentation/zk.txt
-
-test:
-  - name: Zk
-    path: /docs/docs/zpracovani/presentation/zk.txt
+groups:
+  - key: presentation
+    name: Prezentace
+    path: /docs/docs/zpracovani/presentation
+  - key: worksheet
+    name: Pracovní listy
+    path: /docs/docs/zpracovani/worksheet
+  - key: test
+    name: Testy
+    path: /docs/docs/zpracovani/test

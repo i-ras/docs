@@ -148,23 +148,25 @@
         <div class="content-box">
             <h2 class="mb-4">Seznam studijních materiálů - {{ page.title }}</h2>
 
-            {% assign documents = site.data[page.data_file] %}
-
-            {% for group in page.show_groups %}
-                <h3>{{ group | capitalize }}</h3>
-                <ul class="list-group">
-                    {% assign items = documents[group] %}
-                    {% if items %}
-                        {% for document in items %}
-                            <li class="list-group-item">
-                                <h5>{{ document.name }}</h5>
-                                <a href="{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
-                            </li>
-                        {% endfor %}
-                    {% else %}
-                        <li class="list-group-item">Žádné dokumenty k dispozici.</li>
-                    {% endif %}
-                </ul>
+            {% assign groups = site.data[page.data_file].groups %}
+            
+            {% for group in groups %}
+                {% if page.show_groups contains group.key %}
+                    <h3>{{ group.name }}</h3>
+                    <ul class="list-group">
+                        {% assign documents = site.data[page.data_file][group.key] %}
+                        {% if documents %}
+                            {% for document in documents %}
+                                <li class="list-group-item">
+                                    <span>{{ document.name }}</span>
+                                    <a href="{{ group.path }}/{{ document.path }}" class="btn btn-success" download>Stáhnout materiál</a>
+                                </li>
+                            {% endfor %}
+                        {% else %}
+                            <li class="list-group-item">Žádné dokumenty k dispozici.</li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
             {% endfor %}
         </div>
 
