@@ -1,0 +1,115 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-custom {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header-box {
+    background-color: #28a745;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-box {
+    background-color: #e9ecef;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    padding: 0;
+}
+
+.nav-link {
+    color: #28a745 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #28a745;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.dropdown-menu a {
+    color: #28a745 !important;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-item:hover .dropdown-menu, 
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    margin-top: 0;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745 !important;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-link i {
+    margin-right: 10px;
+}
+
+.home-link .text {
+    margin-left: 15px;
+}
+
+.home-link:hover {
+    background-color: #28a745;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.content-box {
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.footer-box {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
