@@ -1,6 +1,7 @@
 ---
 layout: predmet
 title: Zpracování
+short_title: Zpracování
 button_id: zpracovaniDropdown
 data_file: zpracovani
 show_groups:
