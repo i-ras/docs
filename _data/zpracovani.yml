@@ -1,7 +1,6 @@
+---
 presentation:
-  - name: Algebra - Základy
-    path: /docs/docs/zpracovani/presentation/zk.txt
-
-worksheet:
-
-test:
+- name: zk
+  path: presentation/zk.txt
+worksheet: []
+test: []
