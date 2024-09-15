@@ -107,8 +107,8 @@
                         <ul class="navbar-nav">
                             {% for subject in site.subjects %}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="/docs{{ subject.url }}" id="{{ subject.buttonId }}" role="button">
-                                        {{ subject.title }}
+                                    <a class="nav-link" href="/docs{{ subject.url }}" id="{{ subject.button_id }}" role="button">
+                                        {{ subject.short_title }}
                                     </a>
                                 </li>
                             {% endfor %}
