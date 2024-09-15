@@ -1,8 +1,9 @@
 ---
 layout: predmet
-title: Chov
-button_id: chovDropdown
-data_file: chov
+title: Praxe 1
+short_title: Praxe 1
+button_id: praxe1Dropdown
+data_file: praxe1
 show_groups:
   - key: presentation
     display_name: Prezentace
