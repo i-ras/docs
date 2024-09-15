@@ -2,7 +2,8 @@ require 'fileutils'
 require 'yaml'
 
 subjects_dir = '../_subjects'
-docs_root_dir = 'docs'
+root_dir = 'docs'
+docs_dir = '../docs'
 data_dir = '../_data'
 
 FileUtils.mkdir_p(data_dir)
@@ -12,7 +13,7 @@ Dir.foreach(subjects_dir) do |file|
 
   if file.end_with?('.md')
     subject_name = File.basename(file, '.md')
-    subject_docs_path = File.join(docs_root_dir, subject_name, 'docs')
+    subject_docs_path = File.join(docs_dir, subject_name)
 
     unless Dir.exist?(subject_docs_path)
       puts "Adresář #{subject_docs_path} neexistuje, přeskočeno."
@@ -31,7 +32,7 @@ Dir.foreach(subjects_dir) do |file|
 
           documents << {
             'name' => File.basename(sub_file, File.extname(sub_file)),
-            'path' => File.join('/', docs_root_dir, subject_name, 'docs', sub_dir, sub_file)
+            'path' => File.join('/', docs_dir, subject_name, sub_dir, sub_file)
           }
         end
 
