@@ -1,5 +1,7 @@
 ---
 presentation:
+- name: zk copy
+  path: "/docs/docs/zpracovani/presentation/zk copy.txt"
 - name: zk
   path: "/docs/docs/zpracovani/presentation/zk.txt"
 worksheet:
