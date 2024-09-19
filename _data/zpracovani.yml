@@ -1,8 +1,6 @@
 ---
 presentation:
-- name: zk copy
-  path: "/docs/docs/zpracovani/presentation/zk copy.txt"
-- name: zk
-  path: "/docs/docs/zpracovani/presentation/zk.txt"
+- name: Složení masa a jeho vaznost
+  path: "/docs/docs/zpracovani/presentation/Složení masa a jeho vaznost.pdf"
 worksheet:
 test:
