@@ -171,7 +171,7 @@
                         {% if items %}
                             {% for document in items %}
                                 <li class="list-group-item">
-                                    <h5>{{ document.name }}</h5>
+                                    <h5><a href="document.path">{{ document.name }}</a></h5>
                                     <a href="{{ document.path }}" class="btn btn-success" download><i class="fa fa-download"></i></a>
                                 </li>
                             {% endfor %}
