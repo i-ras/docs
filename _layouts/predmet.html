@@ -123,6 +123,13 @@
         .group-section h3 {
             margin-bottom: 10px;
         }
+        .custom-link {
+            text-decoration: none;
+            color: black;
+        }
+        .custom-link:hover {
+            color: #28a745;
+        }
     </style>
 </head>
 <body>
@@ -171,7 +178,7 @@
                         {% if items %}
                             {% for document in items %}
                                 <li class="list-group-item">
-                                    <h5><a href="{{document.path}}">{{ document.name }}</a></h5>
+                                    <h5><a href="{{document.path}}" target="_blank" class="custom-link">{{ document.name }}</a></h5>
                                     <a href="{{ document.path }}" class="btn btn-success" download><i class="fa fa-download"></i></a>
                                 </li>
                             {% endfor %}
