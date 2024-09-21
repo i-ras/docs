@@ -1,6 +1,6 @@
 ---
 layout: predmet
-title: Zpracování
+title: Zpracování živočišných produktů
 short_title: Zpracování
 button_id: zpracovaniDropdown
 data_file: zpracovani
