@@ -1,12 +1,11 @@
 ---
 presentation:
-- name: Jatečné opracování, omračování a vykrvení zvířat
-  path: "/docs/docs/zpracovani/presentation/Jatečné opracování, omračování a vykrvení
-    zvířat.pdf"
-- name: Přeprava zvířat na jatka a zásady přepravy
-  path: "/docs/docs/zpracovani/presentation/Přeprava zvířat na jatka a zásady přepravy.pdf"
 - name: Složení masa a jeho vaznost
   path: "/docs/docs/zpracovani/presentation/Složení masa a jeho vaznost.pdf"
+- name: Přeprava zvířat na jatka a zásady přepravy
+  path: "/docs/docs/zpracovani/presentation/Přeprava zvířat na jatka a zásady přepravy.pdf"
+- name: Jatečné opracování, omračování a vykrvení zvířat
+  path: "/docs/docs/zpracovani/presentation/Jatečné opracování, omračování a vykrvení zvířat.pdf"
 - name: Způsoby nákupu zvířat
   path: "/docs/docs/zpracovani/presentation/Způsoby nákupu zvířat.pdf"
 worksheet:
