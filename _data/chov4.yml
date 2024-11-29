@@ -1,6 +1,10 @@
 ---
 presentation:
-- name: Historie chovu ovcí a význam.pdf
+- name: Historie chovu ovcí a význam
   path: "/docs/docs/chov4/presentation/Historie chovu ovcí a význam.pdf"
+- name: Plemena ovcí 1
+  path: "/docs/docs/chov4/presentation/Plemena ovcí 1.pdf"
+- name: Plemena ovcí 2
+  path: "/docs/docs/chov4/presentation/Plemena ovcí 2.pdf"
 worksheet:
 test:
