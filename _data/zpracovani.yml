@@ -8,5 +8,7 @@ presentation:
   path: "/docs/docs/zpracovani/presentation/Jatečné opracování, omračování a vykrvení zvířat.pdf"
 - name: Způsoby nákupu zvířat
   path: "/docs/docs/zpracovani/presentation/Způsoby nákupu zvířat.pdf"
+- name: Opracování povrchu jatečného těla u zvířat
+  path: "/docs/docs/zpracovani/presentation/Opracování_povrchu_jatečného_těla_u_zvířat.pdf"
 worksheet:
 test:
