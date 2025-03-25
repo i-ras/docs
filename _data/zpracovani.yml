@@ -16,5 +16,9 @@ presentation:
   path: "/docs/docs/zpracovani/presentation/Bourání_masa.pdf"
 - name: Mechanická separace
   path: "/docs/docs/zpracovani/presentation/Mechanická_separace.pdf"
+- name: Získávání mléka
+  path: "/docs/docs/zpracovani/presentation/Získávání_mléka.pdf"
+- name: Technologie mléka
+  path: "/docs/docs/zpracovani/presentation/Technologie_mléka.pdf"
 worksheet:
 test:
