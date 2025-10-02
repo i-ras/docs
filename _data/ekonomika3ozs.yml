@@ -4,9 +4,13 @@ presentation:
   path: "/docs/docs/ekonomika3ozs/presentation/Podnikání - druhy mezd.pdf"
 - name: Podnikání - hrubá a čistá mzda
   path: "/docs/docs/ekonomika3ozs/presentation/Podnikání - hrubá a čistá mzda.pdf"
+- name: Podnikání - zásady daňové evidence
+  path: "/docs/docs/ekonomika3ozs/presentation/Podnikání___zásady_daňové_evidence.pdf"
 worksheet:
 - name: Podnikání - druhy mezd
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___druhy_mezd.pdf"
 - name: Podnikání - hrubá a čistá mzda
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___hrubá_a_čistá_mzda.pdf"
+- name: Podnikání - zásady daňové evidence
+  path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___zásady_daňové_evidence.pdf"
 test:
