@@ -1,16 +1,16 @@
 ---
 presentation:
 - name: Tržní ekonomika - hospodářský proces
-  path: "/docs/docs/ekonomika3ozs/presentation/Tržní_ekonomika___hospodářský_proces___prezentace.pdf"
+  path: "/docs/docs/ekonomika2ozs/presentation/Tržní_ekonomika___hospodářský_proces___prezentace.pdf"
 - name: Tržní ekonomika - potřeby, statky, služby, spotřeba, živ. úroveň
-  path: "/docs/docs/ekonomika3ozs/presentation/Tržní_ekonomika___potřeby__statky_služby__spotřeba__živ__úroveň___prezentace.pdf"
+  path: "/docs/docs/ekonomika2ozs/presentation/Tržní_ekonomika___potřeby__statky_služby__spotřeba__živ__úroveň___prezentace.pdf"
 - name: Tržní ekonomika - výroba, výrobní faktory
-  path: "/docs/docs/ekonomika3ozs/presentation/Tržní_ekonomika___výroba__výrobní_faktory___prezentace.pdf"
+  path: "/docs/docs/ekonomika2ozs/presentation/Tržní_ekonomika___výroba__výrobní_faktory___prezentace.pdf"
 worksheet:
 - name: Tržní ekonomika - hospodářský proces
-  path: "/docs/docs/ekonomika3ozs/worksheet/Tržní_ekonomika___hospodářský_proces___zápis.pdf"
+  path: "/docs/docs/ekonomika2ozs/worksheet/Tržní_ekonomika___hospodářský_proces___zápis.pdf"
 - name: Tržní ekonomika - potřeby, statky, služby, spotřeba, živ. úroveň
-  path: "/docs/docs/ekonomika3ozs/worksheet/Tržní_ekonomika___potřeby__statky_služby__spotřeba__živ__úroveň___zápis.pdf"
+  path: "/docs/docs/ekonomika2ozs/worksheet/Tržní_ekonomika___potřeby__statky_služby__spotřeba__živ__úroveň___zápis.pdf"
 - name: Tržní ekonomika - výroba, výrobní faktory
-  path: "/docs/docs/ekonomika3ozs/worksheet/Tržní_ekonomika___výroba__výrobní_faktory__zápis.pdf"
+  path: "/docs/docs/ekonomika2ozs/worksheet/Tržní_ekonomika___výroba__výrobní_faktory__zápis.pdf"
 test:
