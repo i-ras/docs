@@ -1,5 +1,6 @@
 ---
 layout: predmet
+category: Ekonomika
 title: Ekonomika 3 - Opravář zemědělských strojů a zařízení
 short_title: Ekonomika 3 - OZS
 button_id: ekonomika3ozsDropdown
