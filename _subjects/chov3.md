@@ -1,5 +1,6 @@
 ---
 layout: predmet
+category: Chov
 title: Chov hospodářských zvířat 3
 short_title: Chov 3
 button_id: chov3Dropdown
