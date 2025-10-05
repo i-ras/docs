@@ -97,6 +97,17 @@
             text-align: justify;
             padding: 20px;
         }
+
+        .dropdown-menu .dropdown-item {
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #28a745;
+            color: white !important;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -113,12 +124,35 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            {% for subject in site.subjects %}
+
+                            {% assign with_category = site.subjects | where_exp:"item","item.category" %}
+                            {% assign no_category = site.subjects | where_exp:"item","item.category == nil" %}
+                            {% assign grouped = with_category | group_by:"category" %}
+
+                            {% for subject in no_category %}
+                              <li class="nav-item">
+                                <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
+                              </li>
+                            {% endfor %}
+
+                            {% for group in grouped %}
+                              {% if group.items.size > 1 %}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="/docs{{ subject.url }}" id="{{ subject.button_id }}" role="button">
-                                        {{ subject.short_title }}
-                                    </a>
+                                  <a class="nav-link dropdown-toggle" href="#" id="{{ group.name | slugify }}Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ group.name }}
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    {% for subject in group.items %}
+                                      <li><a class="dropdown-item" href="/docs{{ subject.url }}">{{ subject.short_title }}</a></li>
+                                    {% endfor %}
+                                  </ul>
                                 </li>
+                              {% else %}
+                                {% assign subject = group.items[0] %}
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
+                                </li>
+                              {% endif %}
                             {% endfor %}
                         </ul>
                     </div>
