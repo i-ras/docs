@@ -1,5 +1,6 @@
 ---
 layout: predmet
+category: Chov koní
 title: Chov koní 3
 short_title: Chov koní 3
 button_id: chovKoni3Dropdown

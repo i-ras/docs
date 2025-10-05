@@ -1,5 +1,6 @@
 ---
 layout: predmet
+category: Praxe
 title: Praxe 2
 short_title: Praxe 2
 button_id: praxe2Dropdown
