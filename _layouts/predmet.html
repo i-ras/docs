@@ -153,35 +153,35 @@
                                 </a>
                             </li>
 
-                            {% assign grouped = site.subjects | group_by: "category" %}
+                            {% assign with_category = site.subjects | where_exp:"item","item.category" %}
+                            {% assign no_category = site.subjects | where_exp:"item","item.category == nil" %}
+                            {% assign grouped = with_category | group_by:"category" %}
+
+                            <!-- Nezařazené předměty -->
+                            {% for subject in no_category %}
+                              <li class="nav-item">
+                                <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
+                              </li>
+                            {% endfor %}
+
+                            <!-- Předměty se skupinou -->
                             {% for group in grouped %}
-                              {% if group.name %}
-                                {% if group.items.size > 1 %}
-                                  <!-- Kategorie s více než 1 předmětem -->
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="{{ group.name | slugify }}Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      {{ group.name }}
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                      {% for subject in group.items %}
-                                        <li><a class="dropdown-item" href="/docs{{ subject.url }}">{{ subject.short_title }}</a></li>
-                                      {% endfor %}
-                                    </ul>
-                                  </li>
-                                {% else %}
-                                  <!-- Kategorie má jen 1 předmět -->
-                                  {% assign subject = group.items[0] %}
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
-                                  </li>
-                                {% endif %}
+                              {% if group.items.size > 1 %}
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="{{ group.name | slugify }}Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ group.name }}
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    {% for subject in group.items %}
+                                      <li><a class="dropdown-item" href="/docs{{ subject.url }}">{{ subject.short_title }}</a></li>
+                                    {% endfor %}
+                                  </ul>
+                                </li>
                               {% else %}
-                                <!-- Bez kategorie -->
-                                {% for subject in group.items %}
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
-                                  </li>
-                                {% endfor %}
+                                {% assign subject = group.items[0] %}
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
+                                </li>
                               {% endif %}
                             {% endfor %}
                         </ul>
