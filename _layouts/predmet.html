@@ -130,14 +130,13 @@
             color: #28a745;
         }
 
-        /* >>> ÚPRAVA DROPDOWNU <<< */
         .dropdown-menu .dropdown-item {
-            font-size: 1.1rem;  /* zvětšené písmo */
+            font-size: 1.2rem;
             font-weight: 500;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .dropdown-menu .dropdown-item:hover {
-            background-color: #28a745; /* stejná zelená jako hlavní menu */
+            background-color: #28a745;
             color: white !important;
             border-radius: 8px;
         }
@@ -168,14 +167,12 @@
                             {% assign no_category = site.subjects | where_exp:"item","item.category == nil" %}
                             {% assign grouped = with_category | group_by:"category" %}
 
-                            <!-- Nezařazené předměty -->
                             {% for subject in no_category %}
                               <li class="nav-item">
                                 <a class="nav-link" href="/docs{{ subject.url }}">{{ subject.short_title }}</a>
                               </li>
                             {% endfor %}
 
-                            <!-- Předměty se skupinou -->
                             {% for group in grouped %}
                               {% if group.items.size > 1 %}
                                 <li class="nav-item dropdown">
