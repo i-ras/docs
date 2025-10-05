@@ -77,7 +77,6 @@
         .home-link {
             display: flex;
             align-items: center;
-            font-size: 16px;
             font-weight: bold;
             color: #28a745 !important;
             text-decoration: none;
@@ -129,6 +128,18 @@
         }
         .custom-link:hover {
             color: #28a745;
+        }
+
+        /* >>> ÚPRAVA DROPDOWNU <<< */
+        .dropdown-menu .dropdown-item {
+            font-size: 1.1rem;  /* zvětšené písmo */
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #28a745; /* stejná zelená jako hlavní menu */
+            color: white !important;
+            border-radius: 8px;
         }
     </style>
 </head>
