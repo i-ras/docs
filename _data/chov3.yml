@@ -1,4 +1,8 @@
 ---
 presentation:
+- name: Produkce hovězího masa
+  path: "/docs/docs/chov3/presentation/Produkce_hovězího_masa.pdf"
+- name: Techniky výkrmu skotu
+  path: "/docs/docs/chov3/presentation/Techniky_výkrmu_skotu.pdf"
 worksheet:
 test:

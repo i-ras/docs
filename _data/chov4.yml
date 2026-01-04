@@ -7,6 +7,8 @@ presentation:
 - name: Plemena ovcí 2
   path: "/docs/docs/chov4/presentation/Plemena ovcí 2.pdf"
 - name: Základy vlnoznalství
-  path: "/docs/docs/chov4/presentation/Základy_vlnoznalství.pdf"  
+  path: "/docs/docs/chov4/presentation/Základy_vlnoznalství.pdf"
+- name: Plemenitba v chovu ovcí
+  path: "/docs/docs/chov4/presentation/Plemenitba_v_chovu_ovcí.pdf"  
 worksheet:
 test:

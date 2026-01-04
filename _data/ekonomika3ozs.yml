@@ -17,6 +17,9 @@ presentation:
   path: "/docs/docs/ekonomika3ozs/presentation/Daně___výpočet_daní.pdf"
 - name: Daně - státní rozpočet
   path: "/docs/docs/ekonomika3ozs/presentation/Daně___státní_rozpočet.pdf"
+
+- name: Finanční vzdělávání - Peníze
+  path: "/docs/docs/ekonomika3ozs/presentation/Finanční_vzdělávání__Peníze.pdf"
 worksheet:
 - name: Podnikání - druhy mezd
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___druhy_mezd.pdf"
@@ -24,6 +27,7 @@ worksheet:
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___hrubá_a_čistá_mzda.pdf"
 - name: Podnikání - zásady daňové evidence
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___zásady_daňové_evidence.pdf"
+
 - name: Daně - daňové a účetní doklady
   path: "/docs/docs/ekonomika3ozs/worksheet/Daně___daňové_a_účetní_doklady.pdf"
 - name: Daně - přiznání k dani
@@ -34,4 +38,7 @@ worksheet:
   path: "/docs/docs/ekonomika3ozs/worksheet/Daně___výpočet_daní.pdf"
 - name: Daně - státní rozpočet
   path: "/docs/docs/ekonomika3ozs/worksheet/Daně___státní_rozpočet.pdf"
+
+- name: Finanční vzdělávání - Peníze
+  path: "/docs/docs/ekonomika3ozs/worksheet/Finanční_vzdělávání__Peníze.pdf"
 test:
