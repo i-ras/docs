@@ -20,6 +20,8 @@ presentation:
 
 - name: Finanční vzdělávání - Peníze
   path: "/docs/docs/ekonomika3ozs/presentation/Finanční_vzdělávání__Peníze.pdf"
+- name: Finanční_vzdělávání - Hotovostní a bezhotovostní platební styk
+  path: "/docs/docs/ekonomika3ozs/presentation/Finanční_vzdělávání___Hotovostní_a_bezhotovostní_platební_styk.pdf"
 worksheet:
 - name: Podnikání - druhy mezd
   path: "/docs/docs/ekonomika3ozs/worksheet/Podnikání___druhy_mezd.pdf"
@@ -41,4 +43,6 @@ worksheet:
 
 - name: Finanční vzdělávání - Peníze
   path: "/docs/docs/ekonomika3ozs/worksheet/Finanční_vzdělávání__Peníze.pdf"
+- name: Finanční_vzdělávání - Hotovostní a bezhotovostní styk
+  path: "/docs/docs/ekonomika3ozs/worksheet/Finanční_vzdělávání___Hotovostní_a_bezhotovostní_styk.pdf"
 test:
